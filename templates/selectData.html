@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>데이터 보기</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/selectData_style.css') }}">
+</head>
+<body>
+<div id="wrap">
+
+    <header>
+            <div class="innerheader">
+                <!-- logo -->
+                <h1 class="logo"><a href="http://127.0.0.1:8050"><img src="./static/images/blogo22222.png" alt="로고"></a></h1>
+                <!-- menu -->
+                <nav class="gnb fl">
+                    <ul>
+                        <li><a href="#">데이터 보기</a>
+                            <ul class="submenu">
+                                <li><a href="http://127.0.0.1:8052/고혈압/">고혈압</a></li>
+                                <li><a href="http://127.0.0.1:8052/당뇨/">당뇨</a></li>
+                                <li><a href="http://127.0.0.1:8052/고지혈증/">고지혈증</a></li>
+                                <li><a href="http://127.0.0.1:8052/빈혈/">빈혈</a></li>
+                                <li><a href="http://127.0.0.1:8052/신장/">신장</a></li>
+                                <li><a href="http://127.0.0.1:8052/간/">간</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">흡연 상태</a>
+                            <ul class="submenu">
+                                <li><a href="http://127.0.0.1:8053/고혈압/흡연상태/">고혈압</a></li>
+                                <li><a href="http://127.0.0.1:8053/당뇨/흡연상태/">당뇨</a></li>
+                                <li><a href="http://127.0.0.1:8053/고지혈증/흡연상태/">고지혈증</a></li>
+                                <li><a href="http://127.0.0.1:8053/빈혈/흡연상태/">빈혈</a></li>
+                                <li><a href="http://127.0.0.1:8053/신장/흡연상태/">신장</a></li>
+                                <li><a href="http://127.0.0.1:8053/간/흡연상태/">간</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">음주 여부</a>
+                            <ul class="submenu">
+                                <li><a href="http://127.0.0.1:8054/고혈압/음주여부/">고혈압</a></li>
+                                <li><a href="http://127.0.0.1:8054/당뇨/음주여부/">당뇨</a></li>
+                                <li><a href="http://127.0.0.1:8054/고지혈증/음주여부/">고지혈증</a></li>
+                                <li><a href="http://127.0.0.1:8054/빈혈/음주여부/">빈혈</a></li>
+                                <li><a href="http://127.0.0.1:8054/신장/음주여부/">신장</a></li>
+                                <li><a href="http://127.0.0.1:8054/간/음주여부/">간</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BMI 단계</a>
+                            <ul class="submenu">
+                                <li><a href="http://127.0.0.1:8055/고혈압/BMI단계/">고혈압</a></li>
+                                <li><a href="http://127.0.0.1:8055/당뇨/BMI단계/">당뇨</a></li>
+                                <li><a href="http://127.0.0.1:8055/고지혈증/BMI단계/">고지혈증</a></li>
+                                <li><a href="http://127.0.0.1:8055/빈혈/BMI단계/">빈혈</a></li>
+                                <li><a href="http://127.0.0.1:8055/신장/BMI단계/">신장</a></li>
+                                <li><a href="http://127.0.0.1:8055/간/BMI단계/">간</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="tnb">
+                    <ul>
+                        <li><a href="#">서비스 구독</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <section class="main">
+        <div class="list">
+            <div class="data1"><a href="http://127.0.0.1:8052/고혈압/" class="data1"> 고혈압</a></div>
+            <div class="data2"><a href="http://127.0.0.1:8052/당뇨/" class="data2"> 당뇨</a></div>
+            <div class="data3"><a href="http://127.0.0.1:8052/고지혈증/" class="data3"> 고지혈증</a></div>
+            <div class="data4"><a href="http://127.0.0.1:8052/빈혈/" class="data4"> 빈혈</a></div>
+            <div class="data5"><a href="http://127.0.0.1:8052/신장/" class="data5"> 신장</a></div>
+            <div class="data6"><a href="http://127.0.0.1:8052/간/" class="data6"> 간</a></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footerInner">
+            <div class="blogo"><a href="#"><img src="./static/images/blogo999.png" alt="하단로고"></a></div>
+            <div class="copyright">
+                <p>
+                    04541 서울특별시 중구 청계천로 86 한화빌딩 Copyright 2022 <a href="mailto:hanwha@hanwha.com">  Hanwha Chemical. </a> All right reserved.
+                </p>
+            </div>
+            <div class="blist">
+                <ul>
+                    <li><a href="#">온라인구매시스템</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">뉴스 &#38; 공지사항</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
