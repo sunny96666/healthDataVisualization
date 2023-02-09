@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Noto+Sans+KR');
+/* font-family: 'exo 2 */
+/* color: #ff8342 */
+/* reset */
+display:inline-block; font-family: "Font Awesome 5 Free"; font-weight: 800; content: "\f014";  font-style: normal; font-variant: normal; text-rendering: auto; -webkit-font-smoothing: antialiased;
+.fa,.fab,.fad,.fal,.far,.fas{
+	font-weight: 900 !important;
+	}
+
+*{margin: 0;padding: 0;}
+body{font-size: 14px; font-family: 'Noto Sans KR', 'sans-serif';}
+ul li{margin: 0;padding: 0;list-style: none;}
+h1, h2, h3, h4, h5, h6 {margin: 0;padding: 0;}
+.fl {float: left;}
+a{text-decoration: none;color: inherit;}   /*부모의 글자색 상속*/
+a img{ border: none;} /* 하위버전 브라우저에 링크걸린 이미지 줄생김현상 없애기*/
+
+
+
+/*================================================================
+       header
+==================================================================*/
+
+#wrap header{width: 100%; height: 100px; line-height: 100px; position: fixed; top:0; left:0; z-index:999; background: rgba(0,0,0,0.2); /*0.2 -> 20%투명도*/}
+#wrap header .innerheader{width: 1400px; height: 100%; margin: 0 auto;}
+
+/*logo*/
+
+#wrap header .innerheader h1.logo{float: left;}
+#wrap header .innerheader h1.logo img{margin-top: 25px;width:200px;height:52px;}
+
+/*gnb-중앙메뉴*/
+
+
+#wrap header .innerheader .gnb{float: left; margin-left: 50px;}
+#wrap header .innerheader .gnb>ul>li{float: left; margin-right: 35px;text-align: center;}
+#wrap header .innerheader .gnb ul li a{display: block; font-size: 21px; color: #fff; text-align: center;}
+#wrap header .innerheader .gnb ul li a:hover{font-size: 26px;color: #0080FF;
+transition:font-size 0.15s; text-shadow: 2px 2px 6px gray;}
+#wrap header .innerheader .gnb ul li ul{width: 200px;height: 0;overflow: hidden;}
+#wrap header .innerheader .gnb ul li:hover ul{
+    height:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+}
+#wrap header .innerheader .gnb ul li:hover ul li a{
+    text-align: center;
+    background: rgba(0,0,0,0.60);}
+
+
+
+/*tnb-오른쪽메뉴*/
+
+#wrap header .innerheader .tnb{float: right; margin-right: -24px;}
+#wrap header .innerheader .tnb ul li{float: left; margin-right: 25px; }
+#wrap header .innerheader .tnb ul li a{display: block; font-size: 16px; color: #fff; text-align: center;}
+#wrap header .innerheader .tnb ul li a:hover,
+#wrap header .innerheader .tnb ul li a:focus{color: #0080FF;}
+
+#wrap header .innerheader .tnb ul li:last-child a {display: block; border-radius: 30px; margin-top: 35px; border: 1px solid #fff; width: 130px; height: 33px; line-height: 32px; transition: .3s;}
+
+#wrap header .innerheader .tnb ul li:last-child a i{margin-left: 5px;}
+#wrap header .innerheader .tnb ul li:last-child a:hover,
+#wrap header .innerheader .tnb ul li:last-child a:focus{background: #fff; color: #0080FF;}
+
+
+/* ============================================
+    1.main
+=============================================== */
+
+#wrap section.main{width: 100%;height: 1000px;
+background: url("../images/vis_1.jpg")no-repeat center/cover;
+background-attachment: fixed; /*스크롤 올려도 배경 고정*/position: relative;
+/*기준점*/min-width: 1400px; /*모바일에서의 오류 방지*/}
+
+
+/* main text */
+
+#wrap section.main .maintitle{
+position: absolute;top:50%;left: 50%;transform:translate(-50%,-50%);color: #fff;text-align: center;letter-spacing: -1px;  /* 자간 줄이기 */text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+
+#wrap section.main .maintitle h2{font-size: 47px; margin-bottom: 20px;font-weight: normal; /* h2의 bold속성이 해제*/}
+
+#wrap section.main .maintitle p{font-size: 25px; margin-top: 50px;margin-bottom: 30px;}
+
+
+
+/*btn*/
+
+#wrap section.main .maintitle a.view{display: block; width: 180px;padding: 12px 0;font-size: 16px;margin: 0 auto;border: 2px solid #fff;position: relative;overflow: hidden;border-radius: 40px;}
+
+#wrap section.main .maintitle a.view:after{content: ""; width: 0%; height: 100%;position: absolute;top: 0;left: 0;background: rgba(255,255,255,0.4); /*흰색 투명도 40%*/transition: .3s;}
+
+#wrap section.main .maintitle a.view:hover:after{width: 100%;}
+
+#wrap section.main .maintitle a.view:hover:focus{background: rgba(255,255,255,0.7);font-size: 20px;}
+
+/* ============================================
+    footer
+=============================================== */
+
+#wrap footer {clear:both; width: 100%; border-top: 1px solid #999; padding: 30px 0 50px 50px;  box-sizing: border-box; position: relative;min-width:1400px;}
+
+#wrap footer .footerInner {width: 1400px; position: absolute;left: 50%; top:50%; transform: translate(-50%, -50%); margin: 0 auto; margin-bottom: 50px;}
+
+#wrap footer .footerInner .blogo {float: left; margin-top: 7px;overflow: hidden;}
+
+#wrap footer .footerInner .copyright {float: left; margin: 10px 0 0 100px;}
+#wrap footer .footerInner .copyright p {color: #666;}
+#wrap footer .footerInner .copyright p a {color: #0080FF;}
+#wrap footer .footerInner .copyright p a:hover {color: #999;}
+    
+#wrap footer .footerInner .blist {float: right; margin-top: 10px;}
+#wrap footer .footerInner .blist ul li {float: left; margin-left: 30px;}
+#wrap footer .footerInner .blist ul li a {color: #333; display: block; font-weight: bold;}
+#wrap footer .footerInner .blist ul li a:hover {color: #999;}
+
+/* 개인정보처리방침 */
+#wrap footer .footerInner .blist ul li:last-child a {color: #0080FF;}
+#wrap footer .footerInner .blist ul li:last-child a:hover {color: #999;}
